@@ -74,7 +74,7 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* Trust Indicators */}
+          {/* ------------------------Trust Indicators */}
           <div
             className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto animate-fade-up"
             style={{ animationDelay: "0.8s" }}
@@ -101,7 +101,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/*------------------------------- Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
         <span className="font-body text-xs text-ivory/60 tracking-widest uppercase">
           Scroll
