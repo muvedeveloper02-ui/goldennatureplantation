@@ -10,6 +10,7 @@ import { CTASection } from "@/components/home/CTASection";
 const Index = () => {
   return (
     <main className="min-h-screen">
+     
       <Navbar />
       <HeroSection />
       <AboutPreview />

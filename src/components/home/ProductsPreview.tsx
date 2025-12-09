@@ -5,27 +5,32 @@ import { ArrowRight } from "lucide-react";
 const products = [
   {
     id: 1,
-    name: "Ceylon Golden Tips",
-    category: "Premium Tea",
-    description: "Hand-picked golden tips from high-altitude estates, offering a smooth, delicate flavor with honey undertones.",
-    image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80",
-    price: "$45",
+    name: "Bell Papper Powder",
+    category: "Organic Flavors",
+    description:
+      "Discover the authentic taste of nature with our Organic Flavors, crafted from carefully selected ingredients grown without chemicals, pesticides, or synthetic additives. Each flavor is rich in nutrients, bursting with freshness, and designed to enhance your lifestyle with healthier, more sustainable choices.",
+    image: `${import.meta.env.BASE_URL}images/calizta.png`,
+    price: "lkr 500.00",
+    //badge: "Best Seller",
   },
+
   {
     id: 2,
-    name: "Herbal Harmony Blend",
-    category: "Herbal Wellness",
-    description: "A soothing fusion of native Sri Lankan herbs crafted for relaxation and inner balance.",
-    image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80",
-    price: "$32",
+    name: "Calizta Tea",
+    category: "Calizta",
+    description:
+      "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
+    image: `${import.meta.env.BASE_URL}images/calizta.png`,
+    price: "lkr 400.00",
   },
   {
     id: 3,
-    name: "Pure Ceylon Cinnamon",
-    category: "Organic Spices",
-    description: "The world's finest true cinnamon, harvested from ancient groves using traditional methods.",
-    image: "https://images.unsplash.com/photo-1599909533601-fc5b5e2c2c9c?auto=format&fit=crop&w=600&q=80",
-    price: "$28",
+    name: "Chilli Papper Sauce",
+    category: "Hotbanero",
+    description:
+      "HOTBANERO is not just a sauce—it’s an experience of bold, fiery flavor crafted from the finest habanero and Sri Lankan chilies. Each bottle delivers the perfect balance of heat and taste, elevating your meals with a kick that lingers in the best way.",
+    image: `${import.meta.env.BASE_URL}images/hotbanero.png`,
+    price: "lkr 300.00",
   },
 ];
 
@@ -35,13 +40,15 @@ export function ProductsPreview() {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="font-body text-sm tracking-widest uppercase text-gold">Our Collection</span>
+          <span className="font-body text-sm tracking-widest uppercase text-gold">
+            Our Collection
+          </span>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mt-4 mb-6">
             Nature's <span className="text-emerald">Premium</span> Offerings
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Each product tells a story of careful cultivation, traditional craftsmanship, 
-            and an unwavering commitment to purity.
+            Each product tells a story of careful cultivation, traditional
+            craftsmanship, and an unwavering commitment to purity.
           </p>
         </div>
 
@@ -61,15 +68,19 @@ export function ProductsPreview() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
+
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4 bg-gold/90 backdrop-blur-sm rounded-full px-4 py-1">
-                  <span className="font-body text-xs text-emerald-dark font-medium">{product.category}</span>
+                  <span className="font-body text-xs text-emerald-dark font-medium">
+                    {product.category}
+                  </span>
                 </div>
 
                 {/* Price Tag */}
                 <div className="absolute bottom-4 right-4 bg-ivory/95 backdrop-blur-sm rounded-lg px-3 py-2 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                  <span className="font-display text-xl text-emerald">{product.price}</span>
+                  <span className="font-display text-xl text-emerald">
+                    {product.price}
+                  </span>
                 </div>
               </div>
 

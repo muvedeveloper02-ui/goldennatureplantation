@@ -5,25 +5,30 @@ const testimonials = [
     id: 1,
     name: "Sarah Mitchell",
     role: "Tea Sommelier, London",
-    content: "Golden Nature's Ceylon Golden Tips is simply extraordinary. The delicate flavor profile and golden hue speak to their exceptional cultivation practices. A true gem for discerning tea lovers.",
+    content:
+      "Golden Nature's Ceylon Golden Tips is simply extraordinary. The delicate flavor profile and golden hue speak to their exceptional cultivation practices. A true gem for discerning tea lovers.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+    image: "/goldennatureplantation/images/calizta.png",
   },
   {
     id: 2,
     name: "Michael Chen",
     role: "Wellness Practitioner, Singapore",
-    content: "Their herbal blends have become an essential part of my wellness practice. The purity and potency are unmatched. My clients consistently report transformative results.",
+    content:
+      "Their herbal blends have become an essential part of my wellness practice. The purity and potency are unmatched. My clients consistently report transformative results.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
   },
   {
     id: 3,
     name: "Emma Johansson",
     role: "Investment Partner, Sweden",
-    content: "Beyond the exceptional product quality, Golden Nature represents a sound investment in sustainable agriculture. Their transparency and growth trajectory make them a standout partner.",
+    content:
+      "Beyond the exceptional product quality, Golden Nature represents a sound investment in sustainable agriculture. Their transparency and growth trajectory make them a standout partner.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
+    image:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
   },
 ];
 
@@ -33,13 +38,15 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="font-body text-sm tracking-widest uppercase text-gold">Testimonials</span>
+          <span className="font-body text-sm tracking-widest uppercase text-gold">
+            Testimonials
+          </span>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mt-4 mb-6">
             Voices of <span className="text-emerald">Trust</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Hear from our global community of tea connoisseurs, wellness practitioners, 
-            and valued investment partners.
+            Hear from our global community of tea connoisseurs, wellness
+            practitioners, and valued investment partners.
           </p>
         </div>
 
@@ -76,8 +83,12 @@ export function TestimonialsSection() {
                   className="w-14 h-14 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-display text-foreground">{testimonial.name}</p>
-                  <p className="font-body text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="font-display text-foreground">
+                    {testimonial.name}
+                  </p>
+                  <p className="font-body text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             </div>

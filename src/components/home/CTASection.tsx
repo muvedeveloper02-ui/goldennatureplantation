@@ -60,7 +60,7 @@ export function CTASection() {
             </div>
           </div>
 
-          {/* Image Composition */}
+          Image Composition
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img

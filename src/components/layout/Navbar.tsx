@@ -40,24 +40,31 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo from Public Folder */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            {/* <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Leaf className="w-6 h-6 text-gold" />
-            </div>
+            </div> */}
+            <img
+              src="/goldennatureplantation/images/logo3.png"
+              alt="Golden Nature Logo"
+              className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
             <div className="flex flex-col">
-              <span className={cn(
-                "font-display text-xl font-semibold tracking-wide transition-colors",
-                isScrolled ? "text-emerald" : "text-ivory"
-              )}>
-                Golden Nature
+              <span
+                className={cn(
+                  "font-display text-xl tracking-wide transition-colors",
+                  isScrolled ? "text-emerald" : "text-ivory"
+                )}
+              >
+                GOLDEN NATURE PLANTATION
               </span>
-              <span className={cn(
+              {/* <span className={cn(
                 "text-xs font-body tracking-widest uppercase transition-colors",
                 isScrolled ? "text-emerald-light" : "text-gold"
               )}>
                 Plantation
-              </span>
+              </span> */}
             </div>
           </Link>
 
@@ -69,8 +76,11 @@ export function Navbar() {
                 to={link.path}
                 className={cn(
                   "font-body text-sm tracking-wide uppercase relative py-2 transition-colors",
-                  isScrolled ? "text-foreground hover:text-emerald" : "text-ivory/90 hover:text-gold",
-                  location.pathname === link.path && (isScrolled ? "text-emerald" : "text-gold"),
+                  isScrolled
+                    ? "text-foreground hover:text-emerald"
+                    : "text-ivory/90 hover:text-gold",
+                  location.pathname === link.path &&
+                    (isScrolled ? "text-emerald" : "text-gold"),
                   "after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gold after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left",
                   location.pathname === link.path && "after:scale-x-100"
                 )}
@@ -87,12 +97,18 @@ export function Navbar() {
           <button
             className={cn(
               "lg:hidden p-2 rounded-lg transition-colors",
-              isScrolled ? "text-emerald hover:bg-emerald/10" : "text-ivory hover:bg-ivory/10"
+              isScrolled
+                ? "text-emerald hover:bg-emerald/10"
+                : "text-ivory hover:bg-ivory/10"
             )}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -110,7 +126,9 @@ export function Navbar() {
                 to={link.path}
                 className={cn(
                   "block font-body text-base py-2 border-b border-border/50 transition-colors",
-                  location.pathname === link.path ? "text-emerald font-medium" : "text-foreground hover:text-emerald"
+                  location.pathname === link.path
+                    ? "text-emerald font-medium"
+                    : "text-foreground hover:text-emerald"
                 )}
               >
                 {link.name}

@@ -1,115 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    /* Golden Nature Brand Colors */
-    --background: 45 30% 97%;
-    --foreground: 150 20% 15%;
+:root {
+  --background: 45 30% 97%;
+  --foreground: 150 20% 15%;
 
-    --card: 45 25% 95%;
-    --card-foreground: 150 20% 15%;
+  --card: 45 25% 95%;
+  --card-foreground: 150 20% 15%;
 
-    --popover: 45 30% 97%;
-    --popover-foreground: 150 20% 15%;
+  --popover: 45 30% 97%;
+  --popover-foreground: 150 20% 15%;
 
-    /* Primary - Deep Emerald Green */
-    --primary: 152 45% 22%;
-    --primary-foreground: 45 30% 97%;
+  --primary: 152 45% 22%;
+  --primary-foreground: 45 30% 97%;
 
-    /* Secondary - Rich Gold */
-    --secondary: 42 65% 55%;
-    --secondary-foreground: 150 20% 15%;
+  --secondary: 42 65% 55%;
+  --secondary-foreground: 150 20% 15%;
 
-    /* Muted - Soft Sage */
-    --muted: 150 15% 90%;
-    --muted-foreground: 150 10% 45%;
+  --muted: 150 15% 90%;
+  --muted-foreground: 150 10% 45%;
 
-    /* Accent - Warm Gold */
-    --accent: 38 70% 50%;
-    --accent-foreground: 45 30% 97%;
+  --accent: 38 70% 50%;
+  --accent-foreground: 45 30% 97%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
 
-    --border: 150 15% 85%;
-    --input: 150 15% 85%;
-    --ring: 152 45% 22%;
+  --border: 150 15% 85%;
+  --input: 150 15% 85%;
+  --ring: 152 45% 22%;
 
-    --radius: 0.75rem;
+  --radius: 0.75rem;
 
-    /* Custom Brand Tokens */
-    --gold: 42 65% 55%;
-    --gold-light: 42 50% 75%;
-    --gold-dark: 38 70% 40%;
-    --emerald: 152 45% 22%;
-    --emerald-light: 152 35% 35%;
-    --emerald-dark: 152 50% 15%;
-    --ivory: 45 30% 97%;
-    --ivory-warm: 40 35% 93%;
-    --charcoal: 150 20% 15%;
-    --sage: 150 20% 75%;
-    --tea-brown: 25 30% 35%;
+  --gold: 42 65% 55%;
+  --gold-light: 42 50% 75%;
+  --gold-dark: 38 70% 40%;
+  --emerald: 152 45% 22%;
+  --emerald-light: 152 35% 35%;
+  --emerald-dark: 152 50% 15%;
+  --ivory: 45 30% 97%;
+  --ivory-warm: 40 35% 93%;
+  --charcoal: 150 20% 15%;
+  --sage: 150 20% 75%;
+  --tea-brown: 25 30% 35%;
 
-    /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(42 65% 55%), hsl(38 70% 45%));
-    --gradient-emerald: linear-gradient(135deg, hsl(152 45% 22%), hsl(152 50% 15%));
-    --gradient-nature: linear-gradient(180deg, hsl(45 30% 97%) 0%, hsl(150 15% 92%) 100%);
-    --gradient-hero: linear-gradient(180deg, rgba(21, 45, 35, 0.7) 0%, rgba(21, 45, 35, 0.4) 100%);
-
-    /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(150 20% 15% / 0.08);
-    --shadow-gold: 0 4px 30px -8px hsl(42 65% 55% / 0.3);
-    --shadow-elevated: 0 12px 40px -12px hsl(150 20% 15% / 0.15);
-
-    /* Typography */
-    --font-display: 'Playfair Display', Georgia, serif;
-    --font-elegant: 'Cormorant Garamond', Georgia, serif;
-    --font-body: 'Outfit', system-ui, sans-serif;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 150 25% 8%;
-    --foreground: 45 30% 95%;
-
-    --card: 150 20% 12%;
-    --card-foreground: 45 30% 95%;
-
-    --popover: 150 20% 10%;
-    --popover-foreground: 45 30% 95%;
-
-    --primary: 42 65% 55%;
-    --primary-foreground: 150 25% 8%;
-
-    --secondary: 152 35% 25%;
-    --secondary-foreground: 45 30% 95%;
-
-    --muted: 150 15% 18%;
-    --muted-foreground: 150 10% 60%;
-
-    --accent: 42 50% 45%;
-    --accent-foreground: 150 25% 8%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 150 15% 20%;
-    --input: 150 15% 20%;
-    --ring: 42 65% 55%;
-  }
+  /* ✅ Poppins applied */
+  --font-display: 'Poppins', sans-serif;
+  --font-elegant: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif;
 }
+
+.dark {
+  --background: 150 25% 8%;
+  --foreground: 45 30% 95%;
+
+  --card: 150 20% 12%;
+  --card-foreground: 45 30% 95%;
+
+  --popover: 150 20% 10%;
+  --popover-foreground: 45 30% 95%;
+
+  --primary: 42 65% 55%;
+  --primary-foreground: 150 25% 8%;
+
+  --secondary: 152 35% 25%;
+  --secondary-foreground: 45 30% 95%;
+
+  --muted: 150 15% 18%;
+  --muted-foreground: 150 10% 60%;
+
+  --accent: 42 50% 45%;
+  --accent-foreground: 150 25% 8%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 150 15% 20%;
+  --input: 150 15% 20%;
+  --ring: 42 65% 55%;
+}
+
+
 
 @layer base {
   * {
