@@ -55,7 +55,10 @@ import NotFound from "./pages/NotFound";
 import Quotation from "@/pages/Quotation";
 import ProductDetails from "@/pages/ProductDetails";
 import Cart from "@/pages/Cart";
-import Checkout from "@/pages/Checkout"
+import Checkout from "@/pages/Checkout";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsConditions from "@/pages/TermsConditions";
+
 
 const queryClient = new QueryClient();
 
@@ -65,7 +68,7 @@ const App = () => (
       <Toaster />
       <Sonner />
 
-      {/* ✅ BrowserRouter REMOVED FROM HERE */}
+      {/*BrowserRouter REMOVED FROM HERE */}
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
@@ -75,13 +78,13 @@ const App = () => (
         <Route path="/quotation/:id" element={<Quotation />} />
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path ="/checkout" element={<Checkout/>}/>
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsConditions />} />
       </Routes>
-
     </TooltipProvider>
   </QueryClientProvider>
 );
 
 export default App;
-

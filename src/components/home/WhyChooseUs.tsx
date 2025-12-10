@@ -42,7 +42,7 @@ const reasons = [
 export function WhyChooseUs() {
   return (
     <section className="py-24 bg-emerald relative overflow-hidden">
-      {/*---------------------------- Background Pattern */}
+      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
           className="absolute top-0 left-0 w-full h-full"
@@ -89,7 +89,7 @@ export function WhyChooseUs() {
           ))}
         </div>
 
-        {/*------------------------------ Stats Section */}
+        {/* Stats Section */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-ivory/10">
           {[
             { value: "10,000+", label: "Hectares of Plantation" },

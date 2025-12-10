@@ -74,7 +74,7 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* ------------------------Trust Indicators */}
+          {/*Trust Indicators */}
           <div
             className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto animate-fade-up"
             style={{ animationDelay: "0.8s" }}

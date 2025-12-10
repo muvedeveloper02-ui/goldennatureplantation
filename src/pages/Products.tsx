@@ -34,8 +34,9 @@ const products = [
     name: "Black Tea",
     category: "Calizta",
     description:
-      "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
-    image:"/goldennatureplantation/images/calizta.png",
+      "Calizta Black Tea is a refined expression of Sri Lanka’s legendary tea heritage, grown in the misty highlands where climate, soil, and elevation create unmatched quality. Each leaf is hand-picked at peak maturity, naturally withered, and expertly oxidized to develop its rich aroma, deep amber color, and bold yet smooth flavor. Naturally high in antioxidants, this premium black tea supports heart health, boosts energy, and enhances mental focus without artificial additives. Free from preservatives and chemicals, Calizta Black Tea offers a pure, refreshing experience that nourishes the body while awakening the senses in every cup.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365318/3_kzevum.png",
     price: "lkr 1400.00",
   },
   {
@@ -43,8 +44,9 @@ const products = [
     name: "Soursop",
     category: "Calizta",
     description:
-      "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
-    image: "/goldennatureplantation/images/calizta.png",
+      "Calizta Soursop Tea is a powerful herbal infusion made from carefully selected, naturally grown soursop leaves known for their exceptional wellness benefits. Traditionally valued for supporting immunity, digestion, and cellular health, soursop leaves are gently cleaned, sun-dried, and preserved without chemicals to retain their full therapeutic value. This tea delivers a mild, earthy taste with a naturally calming aroma, making it ideal for daily detox, stress relief, and inner balance. Free from caffeine, artificial flavoring, and synthetic processing, Calizta Soursop Tea is a pure plant-based wellness drink rooted in nature and tradition.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365437/1_uqfmoe.png",
     price: "lkr 1400.00",
   },
   {
@@ -52,8 +54,9 @@ const products = [
     name: "Heen Bovitiya",
     category: "Calizta",
     description:
-      "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
-    image: "/goldennatureplantation/images/calizta.png",
+      "Calizta Heen Bovitiya Tea is a treasured Ayurvedic herbal tea traditionally used in Sri Lanka for liver cleansing, blood purification, and body cooling. Harvested from naturally grown Heen Bovitiya plants in clean forest environments, the leaves are gently dried using traditional methods to preserve their powerful medicinal properties. Rich in natural antioxidants and detoxifying compounds, this tea supports digestion, improves metabolism, and promotes overall internal balance. With its vibrant natural color and refreshing herbal taste, Calizta Heen Bovitiya offers a pure, chemical-free wellness solution for modern lifestyles.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365384/4_mcu9ru.png",
     price: "lkr 1400.00",
   },
   {
@@ -61,8 +64,9 @@ const products = [
     name: "Welpenela",
     category: "Calizta",
     description:
-      "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
-    image: "/goldennatureplantation/images/calizta.png",
+      "Calizta Welpenela Herbal Tea is a time-honored detoxifying herb sourced from Sri Lanka’s untouched forest regions, widely revered in traditional medicine for its blood-cleansing and rejuvenating benefits. Naturally hand-harvested and carefully sun-dried, Welpenela retains its full medicinal strength without artificial processing. This herbal infusion supports weight balance, liver health, digestion, and toxin elimination while delivering a clean, soothing taste. Free from caffeine, preservatives, and additives, Calizta Welpenela Tea offers a deeply nourishing detox drink that harmonizes the body with nature’s healing power.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365406/2_idpsua.png",
     price: "lkr 1400.00",
   },
   {
@@ -70,8 +74,9 @@ const products = [
     name: "Chilli Papper Sauce",
     category: "Hotbanero",
     description:
-      "HOTBANERO is not just a sauce—it’s an experience of bold, fiery flavor crafted from the finest habanero and Sri Lankan chilies. Each bottle delivers the perfect balance of heat and taste, elevating your meals with a kick that lingers in the best way.",
-    image: "/goldennatureplantation/images/hotbanero.png",
+      "Hotbanero Chilli Pepper Sauce is a bold, all-natural fusion of premium Sri Lankan chilies and fiery habanero peppers, crafted for those who love intense flavor with authentic freshness. Made without artificial coloring or preservatives, each batch is slow-processed to preserve natural heat, rich color, and full nutritional value. Chilies are a natural source of vitamins A, C, and capsaicin, known to boost metabolism, support immunity, and improve circulation. With its perfect balance of spice, tang, and depth, Hotbanero transforms everyday meals into exciting, flavor-packed culinary experiences while staying true to nature.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365394/5_ojcin9.png",
     price: "lkr 1300.00",
   },
 ];
@@ -211,7 +216,7 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Wholesale CTA */}
+      {/* Wholesale CTA
       <section className="py-24 bg-emerald">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <span className="font-body text-sm tracking-widest uppercase text-gold">
@@ -232,7 +237,7 @@ const Products = () => {
             </Link>
           </Button>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>

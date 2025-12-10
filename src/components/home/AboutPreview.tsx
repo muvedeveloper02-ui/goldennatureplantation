@@ -48,7 +48,7 @@ export function AboutPreview() {
             {/* Floating Card */}
             <div className="absolute -bottom-8 -right-8 bg-ivory rounded-xl p-6 shadow-elevated max-w-xs">
               <p className="font-elegant text-lg text-emerald italic leading-relaxed">
-                "We don't just grow tea; we cultivate a legacy of excellence."
+                “At Golden Nature Plantation, we don’t simply grow crops — we cultivate trust, sustainability, and prosperity for generations to come.”
               </p>
               <div className="mt-4 flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center">
@@ -56,7 +56,7 @@ export function AboutPreview() {
                 </div>
                 <div>
                   <p className="font-body font-semibold text-foreground">
-                    John Doe
+                    Dhanushka Bandara
                   </p>
                   <p className="font-body text-sm text-muted-foreground">
                     Chairman

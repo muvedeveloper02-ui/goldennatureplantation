@@ -57,13 +57,14 @@ const investmentPlans = [
     name: "Eco Flash",
     minAmount: 100000,
     duration: 6,
+    durationUnit: "months",
     monthlyReturnRate: 0.25, // 25%
     features: [
       "Investment amount 500,000.00 25% Rate Monthly Harvest Accounting-Rs. 10,417.00",
       "Investment amount 1,000,000.00 25% Rate Monthly Harvest Accounting-Rs. 20,833.00",
       "Investment amount 2,000,000.00 25% Rate Monthly Harvest Accounting-Rs. 41,667,00",
       "Investment amount 5,000,000.00 25% Rate Monthly Harvest Accounting-Rs. 104,617.00",
-      "25% Guarenteed Profit",
+      "25% Guarenteed Profit.",
     ],
   },
 
@@ -72,13 +73,14 @@ const investmentPlans = [
     name: "Supreme",
     minAmount: 100000,
     duration: 1,
+    durationUnit: "year",
     monthlyReturnRate: 0.4, // 40%
     features: [
       "Investment amount 500,000.00 40% Rate Monthly Harvest Accounting-Rs. 16,667.00",
       "Investment amount 1,000,000.00 40% Rate Monthly Harvest Accounting-Rs. 33,333.00",
       "Investment amount 2,000,000.00 40% Rate Monthly Harvest Accounting-Rs. 66,667.00",
       "Investment amount 5,000,000.00 40% Rate Monthly Harvest Accounting-Rs. 166,667.00",
-      "40% Guaranteed Profit",
+      "40% Guaranteed Profit.",
     ],
   },
   {
@@ -86,13 +88,14 @@ const investmentPlans = [
     name: "Golden Harvest",
     minAmount: 100000,
     duration: 2,
+    durationUnit: "years",
     monthlyReturnRate: 0.45, // 45%
     features: [
       "Investment amount 500,000.00 45% Rate Monthly Harvest Accounting-Rs. 18,750.00",
       "Investment amount 1,000.000.00 45% Rate Monthly Harvest Accounting-Rs. 37,500.00",
       "Investment amount 2,000,000.0045% Rate Monthly Harvest Accounting-Rs. 75,000.00",
       "Investment amount 5,000,000.00 45% Rate Monthly Harvest Accounting-Rs. 187,500.00",
-      "45% Guarenteed Profit (at maturity)",
+      "45% Guarenteed Profit (at maturity).",
     ],
   },
   {
@@ -100,10 +103,11 @@ const investmentPlans = [
     name: "Diamond",
     minAmount: 100000,
     duration: 5,
+    durationUnit: "years",
     monthlyReturnRate: 5, // 500%
     features: [
       "Investment amount 500,000.00 500% Rate Monthly Harvest Accounting-Rs. 2,500,000.00",
-      "500%, Guaranteed Profit",
+      "500% Guaranteed Profit.",
     ],
   },
 ];
@@ -136,7 +140,7 @@ const Investment = () => {
               Plantation offers a unique opportunity to invest in premium
               agriculture with proven returns and positive environmental impact.
             </p>
-            <div className="flex flex-wrap gap-4">
+            {/* <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="xl" asChild>
                 <Link to="/contact">
                   Request Investor Pack
@@ -146,7 +150,7 @@ const Investment = () => {
               <Button variant="hero-outline" size="xl">
                 Download Annual Report
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -164,30 +168,35 @@ const Investment = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
             {investmentPlans.map((plan) => (
               <div
                 key={plan.id}
-                className="bg-ivory rounded-2xl p-8 shadow-soft hover:shadow-elevated transition-all duration-500"
+                className="bg-ivory rounded-2xl p-8 shadow-soft hover:shadow-elevated transition-all duration-500 flex flex-col"
               >
                 <h3 className="font-display text-2xl text-foreground mb-2">
                   {plan.name}
                 </h3>
 
-                {/* <p className="text-muted-foreground mb-4">{plan.description}</p> */}
-                <ul className="text-sm mb-6 space-y-2 list-disc pl-5 text-muted-foreground">
+                {/* Features Section */}
+                <ul className="text-sm mb-6 space-y-2 list-disc pl-5 text-muted-foreground flex-1">
                   {plan.features.map((point, index) => (
                     <li key={index}>{point}</li>
                   ))}
                 </ul>
 
+                {/* Plan Summary */}
                 <ul className="text-sm mb-6 space-y-2">
                   <li>💰 Minimum: Rs. {plan.minAmount.toLocaleString()}</li>
-                  <li>⏳ Duration: {plan.duration} Months</li>
+                  <li>
+                    ⏳ Duration: {plan.duration}{" "}
+                    {plan.durationUnit === "months" ? "Months" : "Year"}
+                  </li>
+
                   <li>📈 Monthly Return: {plan.monthlyReturnRate * 100}%</li>
                 </ul>
 
-                <Button variant="emerald" className="w-full" asChild>
+                {/* BUTTON at the BOTTOM */}
+                <Button variant="emerald" className="w-full mt-auto" asChild>
                   <Link to={`/quotation/${plan.id}`}>Generate Quotation</Link>
                 </Button>
               </div>
@@ -264,7 +273,7 @@ const Investment = () => {
         </div>
       </section> */}
 
-      <section className="py-24 bg-emerald">
+      {/* <section className="py-24 bg-emerald">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <span className="font-body text-sm tracking-widest uppercase text-gold">
@@ -318,7 +327,7 @@ const Investment = () => {
       </section>
 
       {/* Partnership CTA */}
-      <section id="partnership" className="py-24 bg-gradient-nature">
+      {/* <section id="partnership" className="py-24 bg-gradient-nature">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="bg-ivory rounded-3xl p-12 md:p-16 shadow-elevated text-center max-w-4xl mx-auto">
             <span className="font-body text-sm tracking-widest uppercase text-gold">
@@ -345,7 +354,7 @@ const Investment = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>  */}
 
       <Footer />
     </main>

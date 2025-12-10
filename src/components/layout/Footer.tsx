@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
-import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import {
+  Leaf,
+  MapPin,
+  Phone,
+  Mail,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Twitter,
+} from "lucide-react";
 
 const footerLinks = {
   company: [
@@ -9,10 +18,10 @@ const footerLinks = {
     { name: "Sustainability", path: "/about#sustainability" },
   ],
   products: [
-    { name: "Premium Teas", path: "/products#tea" },
-    { name: "Herbal Wellness", path: "/products#herbal" },
-    { name: "Organic Range", path: "/products#organic" },
+    { name: "Calizta", path: "/products#calizta" },
+    { name: "Hotbanero", path: "/products#hotbanero" },
     { name: "Gift Collections", path: "/products#gifts" },
+    
   ],
   investors: [
     { name: "Why Invest", path: "/investment" },
@@ -23,10 +32,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Facebook, href: "https://www.facebook.com/p/Golden-Nature-Plantation-61576896447100/", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/p/DOp9oJRk7mV/", label: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/authwall?trkInfo=AQHzxtgQvoxE1QAAAZsHFPpwp_m4c4G2PGLhqx85pYNeF04SFmULJuo38hircAG8AOWpkgqed4jJXKVzSJ4Tca8B1gtlCuvRZsKXgcyAL1pqfSve0hhoM62SiIapfoRRdZ7fyhY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgoldennatureplantation%2F", label: "LinkedIn" },
+
 ];
 
 export function Footer() {
@@ -38,9 +47,14 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
+              {/* <div className="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
                 <Leaf className="w-7 h-7 text-gold" />
-              </div>
+              </div> */}
+              <img
+                src="/goldennatureplantation/images/logo.png"
+                alt="Golden Nature Logo"
+                className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
+              />
               <div className="flex flex-col">
                 <span className="font-display text-2xl font-semibold text-ivory">
                   Golden Nature
@@ -51,8 +65,8 @@ export function Footer() {
               </div>
             </Link>
             <p className="font-elegant text-lg text-ivory/80 leading-relaxed mb-6 max-w-sm">
-              Nurturing nature's finest gifts from the pristine highlands of Sri Lanka. 
-              Where tradition meets excellence in every leaf.
+              Nurturing nature's finest gifts from the pristine highlands of Sri
+              Lanka. Where tradition meets excellence in every leaf.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -127,7 +141,10 @@ export function Footer() {
               </div>
               <div>
                 <p className="font-body text-sm text-ivory/70">Address</p>
-                <p className="font-body text-ivory">Colombo, Sri Lanka</p>
+                <p className="font-body text-ivory">
+                 No 179/1 Katugastota
+                  Road, Kandy, Sri Lanka
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -136,7 +153,7 @@ export function Footer() {
               </div>
               <div>
                 <p className="font-body text-sm text-ivory/70">Phone</p>
-                <p className="font-body text-ivory">+94 11 234 5678</p>
+                <p className="font-body text-ivory">+94 817798 555</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -145,7 +162,9 @@ export function Footer() {
               </div>
               <div>
                 <p className="font-body text-sm text-ivory/70">Email</p>
-                <p className="font-body text-ivory">info@goldennature.lk</p>
+                <p className="font-body text-ivory">
+                  info@goldennatureplantation.com
+                </p>
               </div>
             </div>
           </div>
@@ -157,13 +176,20 @@ export function Footer() {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-body text-sm text-ivory/60">
-              © {new Date().getFullYear()} Golden Nature Plantation (Pvt) Ltd. All rights reserved.
+              © {new Date().getFullYear()} Golden Nature Plantation (Pvt) Ltd.
+              All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link to="/privacy" className="font-body text-sm text-ivory/60 hover:text-gold transition-colors">
+              <Link
+                to="/privacy"
+                className="font-body text-sm text-ivory/60 hover:text-gold transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="font-body text-sm text-ivory/60 hover:text-gold transition-colors">
+              <Link
+                to="/terms"
+                className="font-body text-sm text-ivory/60 hover:text-gold transition-colors"
+              >
                 Terms of Service
               </Link>
             </div>

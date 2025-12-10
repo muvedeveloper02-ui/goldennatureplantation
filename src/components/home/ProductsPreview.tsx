@@ -3,34 +3,64 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const products = [
-  {
-    id: 1,
-    name: "Bell Papper Powder",
-    category: "Organic Flavors",
-    description:
-      "Discover the authentic taste of nature with our Organic Flavors, crafted from carefully selected ingredients grown without chemicals, pesticides, or synthetic additives. Each flavor is rich in nutrients, bursting with freshness, and designed to enhance your lifestyle with healthier, more sustainable choices.",
-    image: `${import.meta.env.BASE_URL}images/calizta.png`,
-    price: "lkr 500.00",
-    //badge: "Best Seller",
-  },
+  // {
+  //   id: 1,
+  //   name: "Bell Papper Powder",
+  //   category: "Organic Flavors",
+  //   description:
+  //     "Discover the authentic taste of nature with our Organic Flavors, crafted from carefully selected ingredients grown without chemicals, pesticides, or synthetic additives. Each flavor is rich in nutrients, bursting with freshness, and designed to enhance your lifestyle with healthier, more sustainable choices.",
+  //   image: `${import.meta.env.BASE_URL}images/calizta.png`,
+  //   price: "lkr 500.00",
+  //   //badge: "Best Seller",
+  // },
 
-  {
-    id: 2,
-    name: "Calizta Tea",
+  // {
+  //   id: 2,
+  //   name: "Calizta Tea",
+  //   category: "Calizta",
+  //   description:
+  //     "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
+  //   image: `${import.meta.env.BASE_URL}images/calizta.png`,
+  //   price: "lkr 400.00",
+  // },
+  // {
+  //   id: 3,
+  //   name: "Chilli Papper Sauce",
+  //   category: "Hotbanero",
+  //   description:
+  //     "HOTBANERO is not just a sauce—it’s an experience of bold, fiery flavor crafted from the finest habanero and Sri Lankan chilies. Each bottle delivers the perfect balance of heat and taste, elevating your meals with a kick that lingers in the best way.",
+  //   image: `${import.meta.env.BASE_URL}images/hotbanero.png`,
+  //   price: "lkr 300.00",
+  // },
+   {
+    id: 1,
+    name: "Black Tea",
     category: "Calizta",
     description:
-      "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
-    image: `${import.meta.env.BASE_URL}images/calizta.png`,
-    price: "lkr 400.00",
+      "Calizta Black Tea is a refined expression of Sri Lanka’s legendary tea heritage, grown in the misty highlands where climate, soil, and elevation create unmatched quality. Each leaf is hand-picked at peak maturity, naturally withered, and expertly oxidized to develop its rich aroma, deep amber color, and bold yet smooth flavor. Naturally high in antioxidants, this premium black tea supports heart health, boosts energy, and enhances mental focus without artificial additives. Free from preservatives and chemicals, Calizta Black Tea offers a pure, refreshing experience that nourishes the body while awakening the senses in every cup.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365318/3_kzevum.png",
+    price: "lkr 1400.00",
+  },
+  {
+    id: 2,
+    name: "Soursop",
+    category: "Calizta",
+    description:
+      "Calizta Soursop Tea is a powerful herbal infusion made from carefully selected, naturally grown soursop leaves known for their exceptional wellness benefits. Traditionally valued for supporting immunity, digestion, and cellular health, soursop leaves are gently cleaned, sun-dried, and preserved without chemicals to retain their full therapeutic value. This tea delivers a mild, earthy taste with a naturally calming aroma, making it ideal for daily detox, stress relief, and inner balance. Free from caffeine, artificial flavoring, and synthetic processing, Calizta Soursop Tea is a pure plant-based wellness drink rooted in nature and tradition.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365437/1_uqfmoe.png",
+    price: "lkr 1400.00",
   },
   {
     id: 3,
-    name: "Chilli Papper Sauce",
-    category: "Hotbanero",
+    name: "Heen Bovitiya",
+    category: "Calizta",
     description:
-      "HOTBANERO is not just a sauce—it’s an experience of bold, fiery flavor crafted from the finest habanero and Sri Lankan chilies. Each bottle delivers the perfect balance of heat and taste, elevating your meals with a kick that lingers in the best way.",
-    image: `${import.meta.env.BASE_URL}images/hotbanero.png`,
-    price: "lkr 300.00",
+      "Calizta Heen Bovitiya Tea is a treasured Ayurvedic herbal tea traditionally used in Sri Lanka for liver cleansing, blood purification, and body cooling. Harvested from naturally grown Heen Bovitiya plants in clean forest environments, the leaves are gently dried using traditional methods to preserve their powerful medicinal properties. Rich in natural antioxidants and detoxifying compounds, this tea supports digestion, improves metabolism, and promotes overall internal balance. With its vibrant natural color and refreshing herbal taste, Calizta Heen Bovitiya offers a pure, chemical-free wellness solution for modern lifestyles.",
+    image:
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365384/4_mcu9ru.png",
+    price: "lkr 1400.00",
   },
 ];
 

@@ -12,34 +12,35 @@ import {
 } from "lucide-react";
 
 const timeline = [
-
-  
-  
   {
-    year: "1998",
+    date: "Apr '25",
     title: "The Beginning",
     description:
-      "Founded with a vision to bring Sri Lanka's finest to the world",
+      "Golden Nature Plantation was founded with a commitment to elevate Sri Lanka’s agricultural excellence through innovation, sustainability, and pure natural products.",
   },
   {
-    year: "2005",
+    date: "May '25",
+    title: "Introduced Our First Plantation Mobile Application",
+    description:
+      "Launched a modern, user-friendly mobile app to connect customers, farmers, and investors—bringing transparency, accessibility, and real-time updates to plantation management.",
+  },
+  {
+    date: "Aug '25",
+    title: "Golden Feather Award",
+    description:
+      "Honored with the prestigious Golden Feather Award in recognition of outstanding contribution to sustainable agriculture, product quality, and community development.",
+  },
+  {
+    date: "Sep '25",
     title: "Organic Certification",
-    description: "Achieved full organic certification across all plantations",
+    description:
+      "Officially certified as a fully organic plantation, ensuring that every product meets strict international standards for purity, safety, and eco-friendly cultivation.",
   },
   {
-    year: "2012",
-    title: "Global Expansion",
-    description: "Entered European and Asian markets with premium range",
-  },
-  {
-    year: "2018",
-    title: "Sustainability Award",
-    description: "Recognized for environmental leadership in agriculture",
-  },
-  {
-    year: "2024",
-    title: "Innovation Hub",
-    description: "Launched R&D center for herbal wellness products",
+    date: "Dec '25",
+    title: "Launch of New Products",
+    description:
+      "Expanded our wellness and herbal range with a new collection of premium organic products, crafted through advanced research and global market insights.",
   },
 ];
 
@@ -75,7 +76,7 @@ const About = () => {
       <section className="relative pt-32 pb-24 bg-emerald overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="public\images\potted-plant-scissors-table-arrangement.jpg"
+            src="public/images/potted-plant-scissors-table-arrangement.jpg"
             alt="Tea plantation"
             className="w-full h-full object-cover"
           />
@@ -113,7 +114,7 @@ const About = () => {
 
               <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-green">
                 <img
-                  src="public/logo2.png"
+                  src="public\images\logo2.png"
                   alt="Golden Nature Logo"
                   className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
                 />
@@ -129,30 +130,41 @@ const About = () => {
               </h2>
               <div className="space-y-4 mb-8">
                 <p className="font-elegant text-lg text-muted-foreground leading-relaxed italic">
-                  "When my grandfather first planted tea on these hills, he
-                  whispered a promise to the soil—that we would honor nature's
-                  gifts with reverence and responsibility.
+                  At Golden Nature Plantation (Pvt) Ltd, we operate with a deep
+                  sense of responsibility toward our investors, customers,
+                  employees, and the environment that sustains us. From the soil
+                  we cultivate to the products we deliver, our company is built
+                  on the principles of integrity, transparency, and long-term
+                  value creation. We do not believe in shortcuts or compromise —
+                  every decision we make is measured against quality, ethics,
+                  and sustainability.
                 </p>
                 <p className="font-elegant text-lg text-muted-foreground leading-relaxed italic">
-                  Today, that promise guides everything we do. Every golden leaf
-                  that leaves our estates carries not just exceptional flavor,
-                  but a legacy of care, craftsmanship, and an unbreakable bond
-                  with the land that nurtures us.
+                  To our investors and partners, I personally assure that your
+                  trust is treated with the highest respect. Golden Nature is
+                  founded on real agricultural assets, disciplined financial
+                  management, and structured growth systems, ensuring that every
+                  return is driven by genuine production and professional
+                  governance. Our commitment is not to temporary success, but to
+                  consistent, reliable, and ethical growth built for the future.
                 </p>
                 <p className="font-elegant text-lg text-muted-foreground leading-relaxed italic">
-                  To our customers, partners, and investors—thank you for being
-                  part of this journey. Together, we're not just building a
-                  business; we're cultivating a future where nature and
-                  prosperity bloom side by side."
+                  To the public and future generations, we promise to remain a
+                  responsible guardian of the land, supporting rural
+                  communities, protecting natural resources, and strengthening
+                  Sri Lanka’s global reputation in premium plantation products.
+                  Golden Nature Plantation is not only a business — it is a
+                  promise of trust, sustainability, and national pride, which we
+                  will uphold with unwavering dedication.
                 </p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 rounded-full bg-emerald flex items-center justify-center">
-                  <span className="font-display text-xl text-gold">JD</span>
+                  <span className="font-display text-xl text-gold">DB</span>
                 </div>
                 <div>
                   <p className="font-display text-xl text-foreground">
-                    John Doe
+                    Mr.Dhanushka Bandara
                   </p>
                   <p className="font-body text-muted-foreground">
                     Founder & Chairman
@@ -212,7 +224,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section id="story" className="py-24 bg-ivory-warm">
+      {/* <section id="story" className="py-24 bg-ivory-warm">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
             <span className="font-body text-sm tracking-widest uppercase text-gold">
@@ -236,6 +248,46 @@ const About = () => {
                     <div className="w-0.5 h-full bg-gradient-to-b from-emerald to-emerald/20 mt-4" />
                   )}
                 </div>
+                <div className="pt-4">
+                  <h3 className="font-display text-2xl text-foreground mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="font-body text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
+      {/* Our Story */}
+      <section id="story" className="py-24 bg-ivory-warm">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="font-body text-sm tracking-widest uppercase text-gold">
+              Our Journey
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground mt-4 mb-6">
+              Milestones of <span className="text-emerald">Growth</span>
+            </h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            {timeline.slice(0, 5).map((item, index) => (
+              <div key={item.date} className="flex gap-8 mb-12 last:mb-0">
+                <div className="flex flex-col items-center">
+                  <div className="w-20 h-20 rounded-full bg-emerald flex items-center justify-center shrink-0">
+                    <span className="font-display text-l text-gold">
+                      {item.date}
+                    </span>
+                  </div>
+
+                  {index !== 4 && (
+                    <div className="w-0.5 h-full bg-gradient-to-b from-emerald to-emerald/20 mt-4" />
+                  )}
+                </div>
+
                 <div className="pt-4">
                   <h3 className="font-display text-2xl text-foreground mb-2">
                     {item.title}
@@ -279,7 +331,7 @@ const About = () => {
       </section>
 
       {/* Sustainability */}
-      <section id="sustainability" className="py-24 bg-gradient-nature">
+      {/* <section id="sustainability" className="py-24 bg-gradient-nature">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -348,6 +400,86 @@ const About = () => {
               <img
                 src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=400&q=80"
                 alt="Solar panels"
+                className="rounded-2xl h-64 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section> */}
+      {/* Sustainability */}
+      <section id="sustainability" className="py-24 bg-gradient-nature">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* LEFT CONTENT */}
+            <div>
+              <span className="font-body text-sm tracking-widest uppercase text-gold">
+                Sustainability
+              </span>
+              <h2 className="font-display text-4xl md:text-5xl text-foreground mt-4 mb-6">
+                Growing with Nature,{" "}
+                <span className="text-emerald">Protecting the Future</span>
+              </h2>
+              <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
+                At Golden Nature Plantation (Pvt) Ltd, sustainability is the
+                heart of everything we do. From responsible farming to community
+                development, we operate with deep respect for nature, ensuring
+                that today’s success never comes at the cost of tomorrow.
+              </p>
+
+              <div className="space-y-6">
+                {[
+                  {
+                    title: "Eco-Friendly Cultivation",
+                    desc: "Adopting 100% natural and chemical-free farming practices to protect soil health and biodiversity.",
+                  },
+                  {
+                    title: "Water & Resource Conservation",
+                    desc: "Advanced irrigation, rainwater harvesting, and responsible land usage across all plantations.",
+                  },
+                  {
+                    title: "Forest & Wildlife Protection",
+                    desc: "Preserving natural ecosystems and maintaining dedicated green zones within plantation areas.",
+                  },
+                  {
+                    title: "Community & Farmer Empowerment",
+                    desc: "Supporting rural families through employment, education, healthcare, and sustainable livelihoods.",
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="flex gap-4">
+                    <div className="w-2 h-2 rounded-full bg-gold mt-2 shrink-0" />
+                    <div>
+                      <h4 className="font-display text-lg text-foreground">
+                        {item.title}
+                      </h4>
+                      <p className="font-body text-muted-foreground">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* RIGHT IMAGES */}
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=80"
+                alt="Forest conservation"
+                className="rounded-2xl h-64 object-cover"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=400&q=80"
+                alt="Community agriculture"
+                className="rounded-2xl h-64 object-cover mt-8"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80"
+                alt="Organic farming"
+                className="rounded-2xl h-64 object-cover -mt-8"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=400&q=80"
+                alt="Renewable energy"
                 className="rounded-2xl h-64 object-cover"
               />
             </div>

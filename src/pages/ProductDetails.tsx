@@ -8,38 +8,43 @@ import { Button } from "@/components/ui/button";
 const products = [
   {
     id: 1,
-    name: "Ceylon Golden Tea",
-    description: "Premium organic tea from highland estates.",
+    name: "Black Tea",
+    description:
+      "Calizta Black Tea is a refined expression of Sri Lanka’s legendary tea heritage, grown in the misty highlands where climate, soil, and elevation create unmatched quality. Each leaf is hand-picked at peak maturity, naturally withered, and expertly oxidized to develop its rich aroma, deep amber color, and bold yet smooth flavor. Naturally high in antioxidants, this premium black tea supports heart health, boosts energy, and enhances mental focus without artificial additives. Free from preservatives and chemicals, Calizta Black Tea offers a pure, refreshing experience that nourishes the body while awakening the senses in every cup.",
     price: 1400,
-    image:"/goldennatureplantation/images/calizta.png",
+      image:"https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365318/3_kzevum.png",
   },
   {
     id: 2,
-    name: "Heen Bovitiya Herbal Tea",
-    description: "Natural detox herbal tea for healthy life.",
+   name: "Soursop",
+   description:
+      "Calizta Soursop Tea is a powerful herbal infusion made from carefully selected, naturally grown soursop leaves known for their exceptional wellness benefits. Traditionally valued for supporting immunity, digestion, and cellular health, soursop leaves are gently cleaned, sun-dried, and preserved without chemicals to retain their full therapeutic value. This tea delivers a mild, earthy taste with a naturally calming aroma, making it ideal for daily detox, stress relief, and inner balance. Free from caffeine, artificial flavoring, and synthetic processing, Calizta Soursop Tea is a pure plant-based wellness drink rooted in nature and tradition.",
     price: 1400,
-    image: "/goldennatureplantation/images/calizta.png",
+     image: "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365437/1_uqfmoe.png",
   },
   {
     id: 3,
-    name: "Hot Banero",
-    description: "Spicy natural agricultural product.",
+    name: "Heen Bovitiya",
+     description:
+      "Calizta Heen Bovitiya Tea is a treasured Ayurvedic herbal tea traditionally used in Sri Lanka for liver cleansing, blood purification, and body cooling. Harvested from naturally grown Heen Bovitiya plants in clean forest environments, the leaves are gently dried using traditional methods to preserve their powerful medicinal properties. Rich in natural antioxidants and detoxifying compounds, this tea supports digestion, improves metabolism, and promotes overall internal balance. With its vibrant natural color and refreshing herbal taste, Calizta Heen Bovitiya offers a pure, chemical-free wellness solution for modern lifestyles.",
     price: 1400,
-    image: "/goldennatureplantation/images/calizta.png",
+     image: "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365384/4_mcu9ru.png",
   },
   {
     id: 4,
-    name: "Hot Banero",
-    description: "Spicy natural agricultural product.",
+      name: "Welpenela",
+    description:
+      "Calizta Welpenela Herbal Tea is a time-honored detoxifying herb sourced from Sri Lanka’s untouched forest regions, widely revered in traditional medicine for its blood-cleansing and rejuvenating benefits. Naturally hand-harvested and carefully sun-dried, Welpenela retains its full medicinal strength without artificial processing. This herbal infusion supports weight balance, liver health, digestion, and toxin elimination while delivering a clean, soothing taste. Free from caffeine, preservatives, and additives, Calizta Welpenela Tea offers a deeply nourishing detox drink that harmonizes the body with nature’s healing power.",
     price: 1400,
-    image: "/goldennatureplantation/images/calizta.png",
+   image: "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365406/2_idpsua.png",
   },
   {
     id: 5,
-    name: "Hot Banero",
-    description: "Spicy natural agricultural product.",
+   name: "Chilli Papper Sauce",
+     description:
+      "Hotbanero Chilli Pepper Sauce is a bold, all-natural fusion of premium Sri Lankan chilies and fiery habanero peppers, crafted for those who love intense flavor with authentic freshness. Made without artificial coloring or preservatives, each batch is slow-processed to preserve natural heat, rich color, and full nutritional value. Chilies are a natural source of vitamins A, C, and capsaicin, known to boost metabolism, support immunity, and improve circulation. With its perfect balance of spice, tang, and depth, Hotbanero transforms everyday meals into exciting, flavor-packed culinary experiences while staying true to nature.",
     price: 1300,
-    image: "/goldennatureplantation/images/hotbanero.png",
+   image: "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365394/5_ojcin9.png",
   },
 ];
 //const navigate = useNavigate();
@@ -117,7 +122,7 @@ const ProductDetails = () => {
           <img
             src={product.image}
             alt={product.name}
-            className="rounded-2xl shadow-elevated w-full h-[400px] object-cover"
+            className="rounded-2xl shadow-elevated w-full h-[600px] object-cover"
           />
 
           {/* PRODUCT INFO */}

@@ -88,7 +88,7 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button variant={isScrolled ? "gold" : "hero"} size="lg" asChild>
+            <Button variant={isScrolled ? "emerald" : "hero"} size="lg" asChild>
               <Link to="/contact">Get in Touch</Link>
             </Button>
           </div>
@@ -134,9 +134,9 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button variant="gold" className="w-full mt-4" asChild>
+            {/* <Button variant="emerald" className="w-full mt-4" asChild>
               <Link to="/contact">Get in Touch</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
