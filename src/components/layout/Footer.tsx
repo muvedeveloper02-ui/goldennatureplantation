@@ -56,12 +56,12 @@ export function Footer() {
                 className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
               />
               <div className="flex flex-col">
-                <span className="font-display text-2xl font-semibold text-ivory">
-                  Golden Nature
+                <span className="font-display text-2xl text-ivory">
+                  Golden Nature Plantation (Pvt) Ltd
                 </span>
-                <span className="text-xs font-body tracking-widest uppercase text-gold">
+                {/* <span className="text-xs font-body tracking-widest uppercase text-gold">
                   Plantation (Pvt) Ltd
-                </span>
+                </span> */}
               </div>
             </Link>
             <p className="font-elegant text-lg text-ivory/80 leading-relaxed mb-6 max-w-sm">
@@ -143,7 +143,7 @@ export function Footer() {
                 <p className="font-body text-sm text-ivory/70">Address</p>
                 <p className="font-body text-ivory">
                  No 179/1 Katugastota
-                  Road, Kandy, Sri Lanka
+                Road, Kandy, Sri Lanka
                 </p>
               </div>
             </div>

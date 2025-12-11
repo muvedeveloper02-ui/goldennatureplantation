@@ -3,32 +3,30 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Mitchell",
-    role: "Tea Sommelier, London",
+    name: "Samantha Perera",
+    role: "Customer",
     content:
-      "Golden Nature's Ceylon Golden Tips is simply extraordinary. The delicate flavor profile and golden hue speak to their exceptional cultivation practices. A true gem for discerning tea lovers.",
+      "I’ve been drinking Golden Nature’s Heen Bovitiya tea for a month, and the difference is unbelievable. My digestion improved, bloating reduced, and I feel lighter every morning. Truly a natural detox solution!",
     rating: 5,
-    image: "/goldennatureplantation/images/calizta.png",
+    image: "/goldennatureplantation/images/person1.png",
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Wellness Practitioner, Singapore",
+    name: "Nisuli Fenado",
+    role: "Customer",
     content:
       "Their herbal blends have become an essential part of my wellness practice. The purity and potency are unmatched. My clients consistently report transformative results.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+      image: "/goldennatureplantation/images/person2.png",
   },
   {
     id: 3,
-    name: "Emma Johansson",
-    role: "Investment Partner, Sweden",
+    name: "Malith Jayasekara ",
+    role: "Customer",
     content:
       "Beyond the exceptional product quality, Golden Nature represents a sound investment in sustainable agriculture. Their transparency and growth trajectory make them a standout partner.",
     rating: 5,
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
+      image: "/goldennatureplantation/images/person3.png",
   },
 ];
 

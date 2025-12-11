@@ -48,7 +48,7 @@ export function Navbar() {
             <img
               src="/goldennatureplantation/images/logo3.png"
               alt="Golden Nature Logo"
-              className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
+              className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300"
             />
             <div className="flex flex-col">
               <span

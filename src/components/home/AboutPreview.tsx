@@ -52,7 +52,7 @@ export function AboutPreview() {
               </p>
               <div className="mt-4 flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center">
-                  <span className="font-display text-gold text-lg">JD</span>
+                  <span className="font-display text-gold text-lg">DB</span>
                 </div>
                 <div>
                   <p className="font-body font-semibold text-foreground">
