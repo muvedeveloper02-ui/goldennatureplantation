@@ -46,7 +46,7 @@ export function Navbar() {
               <Leaf className="w-6 h-6 text-gold" />
             </div> */}
             <img
-              src="/goldennatureplantation/images/logo3.png"
+              src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765518698/3_ri7wuo.png"
               alt="Golden Nature Logo"
               className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300"
             />

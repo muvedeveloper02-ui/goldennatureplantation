@@ -3,35 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const products = [
-  // {
-  //   id: 1,
-  //   name: "Bell Papper Powder",
-  //   category: "Organic Flavors",
-  //   description:
-  //     "Discover the authentic taste of nature with our Organic Flavors, crafted from carefully selected ingredients grown without chemicals, pesticides, or synthetic additives. Each flavor is rich in nutrients, bursting with freshness, and designed to enhance your lifestyle with healthier, more sustainable choices.",
-  //   image: `${import.meta.env.BASE_URL}images/calizta.png`,
-  //   price: "lkr 500.00",
-  //   //badge: "Best Seller",
-  // },
-
-  // {
-  //   id: 2,
-  //   name: "Calizta Tea",
-  //   category: "Calizta",
-  //   description:
-  //     "CALIZTA is more than just tea—it’s a journey through the lush green plantations of Sri Lanka, crafted with passion and purity. Each leaf is handpicked at its peak, carefully processed, and blended to bring out a rich aroma, golden color, and unforgettable taste.",
-  //   image: `${import.meta.env.BASE_URL}images/calizta.png`,
-  //   price: "lkr 400.00",
-  // },
-  // {
-  //   id: 3,
-  //   name: "Chilli Papper Sauce",
-  //   category: "Hotbanero",
-  //   description:
-  //     "HOTBANERO is not just a sauce—it’s an experience of bold, fiery flavor crafted from the finest habanero and Sri Lankan chilies. Each bottle delivers the perfect balance of heat and taste, elevating your meals with a kick that lingers in the best way.",
-  //   image: `${import.meta.env.BASE_URL}images/hotbanero.png`,
-  //   price: "lkr 300.00",
-  // },
+ ,
    {
     id: 1,
     name: "Black Tea",
@@ -39,7 +11,7 @@ const products = [
     description:
       "Calizta Black Tea is a refined expression of Sri Lanka’s legendary tea heritage, grown in the misty highlands where climate, soil, and elevation create unmatched quality. Each leaf is hand-picked at peak maturity, naturally withered, and expertly oxidized to develop its rich aroma, deep amber color, and bold yet smooth flavor. Naturally high in antioxidants, this premium black tea supports heart health, boosts energy, and enhances mental focus without artificial additives. Free from preservatives and chemicals, Calizta Black Tea offers a pure, refreshing experience that nourishes the body while awakening the senses in every cup.",
     image:
-      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365318/3_kzevum.png",
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765521963/3_ob0ypy.png",
     price: "lkr 1400.00",
   },
   {

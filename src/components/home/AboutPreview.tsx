@@ -38,7 +38,7 @@ export function AboutPreview() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
-                src="public\images\farmers-holding-tablets-check-tea-modern-concepts.jpg"
+                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765522240/Gemini_Generated_Image_uc96gruc96gruc96_zm5gyg.png"
                 alt="Tea plantation workers handpicking leaves"
                 className="w-full h-[500px] object-cover"
               />

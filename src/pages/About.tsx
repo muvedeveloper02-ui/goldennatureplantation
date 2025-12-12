@@ -153,7 +153,7 @@ const About = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-elevated">
                 <img
-                  src="/goldennatureplantation/images/side-view-gardener-holding-little-tree.jpg"
+                  src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765520935/top-view-peasant-woman-gardening_fyymyg.jpg"
                   alt="Chairman portrait"
                   className="w-full h-[500px] object-cover"
                 />
@@ -161,9 +161,9 @@ const About = () => {
 
               <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-green">
                 <img
-                  src="/goldennatureplantation/images/logo2.png"
+                  src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765521285/1_dic2dk.png"
                   alt="Golden Nature Logo"
-                  className="w-14 h-14 object-contain"
+                  className="w-20 h-20 object-contain"
                 />
               </div>
             </div>

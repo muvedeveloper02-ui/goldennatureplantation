@@ -51,7 +51,7 @@ export function Footer() {
                 <Leaf className="w-7 h-7 text-gold" />
               </div> */}
               <img
-                src="/goldennatureplantation/images/logo.png"
+                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765520749/2_vghe1k.png"
                 alt="Golden Nature Logo"
                 className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
               />

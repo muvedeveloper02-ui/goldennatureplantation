@@ -17,7 +17,7 @@ const products = [
     description:
       "Calizta Black Tea is a refined expression of Sri Lanka’s legendary tea heritage, grown in the misty highlands where climate, soil, and elevation create unmatched quality. Each leaf is hand-picked at peak maturity, naturally withered, and expertly oxidized to develop its rich aroma, deep amber color, and bold yet smooth flavor. Naturally high in antioxidants, this premium black tea supports heart health, boosts energy, and enhances mental focus without artificial additives. Free from preservatives and chemicals, Calizta Black Tea offers a pure, refreshing experience that nourishes the body while awakening the senses in every cup.",
     image:
-      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765365318/3_kzevum.png",
+      "https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765521963/3_ob0ypy.png",
     priceLkr: 1400,
   },
   {
