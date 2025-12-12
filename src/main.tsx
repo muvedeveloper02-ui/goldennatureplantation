@@ -5,7 +5,7 @@ import "./index.css";
 import { CurrencyProvider } from "./context/CurrencyContext";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter basename="/goldennatureplantation">
+  <BrowserRouter basename="/">
     <CurrencyProvider>
       <App />
     </CurrencyProvider>
