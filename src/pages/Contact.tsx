@@ -19,7 +19,7 @@ import { ChevronDown } from "lucide-react";
 
 const branches = [
   {
-    name: "Kandy Head Office",
+    name: "Kandy- Head Office",
     address: [
       "Golden Nature Plantation (Pvt) Ltd",
       "No. 179/1, Katugastota Road,",
@@ -37,20 +37,21 @@ const branches = [
       "https://www.google.com/maps?q=Katugastota+Road+Kandy+Sri+Lanka&output=embed",
   },
   {
-    name: "Colombo Office",
+    name: "Dehiwela- Regional Office",
     address: [
       "Golden Nature Plantation (Pvt) Ltd",
-      "Colombo, Sri Lanka",
-      "Sales & Corporate Coordination",
+      "No. 139,1/4, Galle Road,",
+      "Dehiwela, Sri Lanka",
+      
     ],
-    phone: "+94 11 000 0000", // update to real number if you have
-    email: "colombo@goldennatureplantation.com", // update if needed
+    phone: "+94 74 411 8829", 
+    email: "info@goldennatureplantation.com", 
     hours: [
-      "Monday - Friday: 9:00 AM - 5:30 PM",
+      "Monday - Friday: 8:30 AM - 5:00 PM",
       "Saturday: Closed",
       "Sunday: Closed",
     ],
-    mapTitle: "Golden Nature Plantation - Colombo",
+    mapTitle: "Golden Nature Plantation - Dehiwela",
     mapSrc: "https://www.google.com/maps?q=Colombo+Sri+Lanka&output=embed",
   },
 ];
@@ -73,7 +74,7 @@ const Contact = () => {
     email: "",
     phone: "",
     inquiryType: "",
-    branch: "", // ✅ new field
+    branch: "", 
     message: "",
   });
 
@@ -100,6 +101,13 @@ const Contact = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-emerald overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <img
+            src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765529700/de5cf503edbd8e11f92dee5b5c00c32a_b3ybvz.jpg"
+            alt="Investment background"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-3xl">
             <span className="font-body text-sm tracking-widest uppercase text-gold">
@@ -388,36 +396,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Quick Contact CTA
-      <section className="py-16 bg-emerald">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-              <h3 className="font-display text-2xl text-ivory mb-2">
-                Need Immediate Assistance?
-              </h3>
-              <p className="font-body text-ivory/80">
-                Our teams in Kandy and Colombo are available during business
-                hours for urgent inquiries.
-              </p>
-            </div>
-            <div className="flex gap-4">
-              <Button variant="hero" size="lg" asChild>
-                <a href="tel:+94817798555">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Hotline
-                </a>
-              </Button>
-              <Button variant="hero-outline" size="lg" asChild>
-                <a href="mailto:info@goldennatureplantation.com">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Email Us
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
 
       <Footer />
     </main>

@@ -121,7 +121,7 @@ const About = () => {
       <section className="relative pt-32 pb-24 bg-emerald overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="/goldennatureplantation/images/potted-plant-scissors-table-arrangement.jpg"
+            src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765529672/c7cc3d4338557553938347cfc7121946_fft3ci.jpg"
             alt="Tea plantation"
             className="w-full h-full object-cover"
           />
@@ -350,7 +350,7 @@ const About = () => {
             </ul>
             <a href="#" className="inline-block mr-3">
               <img
-                src="/goldennatureplantation/images/App Store1.png"
+                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765530204/Mobile_app_store_badge_3_vd2gg9.png"
                 alt="Download on the App Store"
                 className="h-12 sm:h-14 w-auto hover:opacity-90 transition"
               />
@@ -359,7 +359,7 @@ const About = () => {
             {/* Google Play button */}
             <a href="#" className="inline-block">
               <img
-                src="/goldennatureplantation/images/Play Store1.png"
+                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765530189/Mobile_app_store_badge_2_bim3kr.png"
                 alt="Get it on Google Play"
                 className="h-12 sm:h-14 w-auto hover:opacity-90 transition"
               />
@@ -628,13 +628,13 @@ const About = () => {
               <div className="flex items-start gap-3 mb-3">
                 <MapPin className="w-5 h-5 text-emerald mt-1" />
                 <p className="font-body text-sm text-muted-foreground">
-                  (Update official Colombo branch address here)
+                  No.139,1/4, Galle Road , Dehiwela, Sri Lanka
                 </p>
               </div>
               <div className="flex items-center gap-3 mb-3">
                 <Phone className="w-5 h-5 text-emerald" />
                 <p className="font-body text-sm text-muted-foreground">
-                  (Update Colombo branch contact number)
+                  +94 74 411 8829
                 </p>
               </div>
               <p className="font-body text-sm text-muted-foreground">

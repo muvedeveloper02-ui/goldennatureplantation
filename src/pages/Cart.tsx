@@ -62,7 +62,7 @@ const Cart = () => {
       <section className="relative pt-32 pb-16 bg-emerald overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=1920&q=80"
+            src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765529679/2ffce9ab7bcda2132dc5b37d90f3d74c_cvpoad.jpg"
             alt="Products background"
             className="w-full h-full object-cover"
           />

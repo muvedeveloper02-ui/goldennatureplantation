@@ -121,7 +121,7 @@ const Investment = () => {
       <section className="relative pt-32 pb-24 bg-emerald overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
+            src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765529946/photo-1486406146926-c627a92ad1ab_fh4syv.avif"
             alt="Investment background"
             className="w-full h-full object-cover"
           />

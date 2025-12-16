@@ -9,10 +9,10 @@ import autoTable from "jspdf-autotable";
 
 //  ALL PLANS (CORRECT DATA)
 const plans = [
-  { id: "1", name: "Eco Flash", duration: 6, rate: 0.25 }, // 25% yearly → monthly calc
-  { id: "2", name: "Supreme", duration: 12, rate: 0.4 }, // 40% yearly
-  { id: "3", name: "Golden Harvest", duration: 24, rate: 0.45 }, // 45% yearly
-  { id: "4", name: "Diamond", duration: 60, rate: 5 }, // 500% after 5 years
+  { id: "1", name: "Eco Flash", duration: 6, rate: 0.25 }, 
+  { id: "2", name: "Supreme", duration: 12, rate: 0.4 }, 
+  { id: "3", name: "Golden Harvest", duration: 24, rate: 0.45 }, 
+  { id: "4", name: "Diamond", duration: 60, rate: 5 }, 
 ];
 
 // ORMAT NUMBER (1,000,000.00)
@@ -174,7 +174,7 @@ const Quotation = () => {
       <section className="relative pt-32 pb-24 bg-emerald overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
+            src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765529946/photo-1486406146926-c627a92ad1ab_fh4syv.avif"
             alt="Investment background"
             className="w-full h-full object-cover"
           />
@@ -210,7 +210,7 @@ const Quotation = () => {
 
       <section className="py-24">
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-          {/* ✅ FORM */}
+          {/*  FORM */}
           <div className="bg-white rounded-2xl shadow-elevated p-10 mb-12">
             <h2 className="font-display text-3xl mb-8 text-center">
               Investment Quotation Generator
