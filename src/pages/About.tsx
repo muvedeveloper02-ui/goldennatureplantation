@@ -20,28 +20,40 @@ const timeline = [
   },
   {
     date: "May '25",
-    title: "Introduced Our First Plantation Mobile Application",
+    title:
+      "Introducing Sri Lanka’s First Plantation Investment Mobile Platform",
+
     description:
-      "Launched a modern, user-friendly mobile app to connect customers, farmers, and investors—bringing transparency, accessibility, and real-time updates to plantation and investment management.",
+      "Launched a modern, user-friendly mobile app to connect customers, farmers, and investors — bringing transparency, accessibility, and real-time updates to plantation and investment management.",
   },
+
   {
     date: "Aug '25",
-    title: "Golden Feather Award",
+    title: "Winner – Golden Feather Award",
+
     description:
       "Honored with the prestigious Golden Feather Award in recognition of our contribution to sustainable agriculture, product quality, rural empowerment, and ethical business practices.",
   },
   {
     date: "Sep '25",
-    title: "Organic Certification",
+    title: "ISO 22000, HACCP & GMP Food-Safety Certified",
     description:
-      "Officially certified as a fully organic plantation, ensuring that every product meets strict international standards for purity, safety, and eco-friendly cultivation.",
+      "Golden Nature Plantation achieved internationally recognized certifications including ISO 22000, HACCP, and GMP — reaffirming our commitment to global food-safety standards, quality excellence, and responsible production.",
   },
+
   {
     date: "Dec '25",
-    title: "Launch of New Products",
+    title: "Launch of New Organic Product Line",
     description:
-      "Expanded our wellness and herbal portfolio with a new collection of premium organic products, developed through research and global market insights while staying true to Sri Lankan roots.",
+      "Golden Nature Plantation proudly introduced a new certified organic wellness range under our Calizta and Hotbanero brands, including Heen Bovitiya Tea,Soursop Tea, Ayurvedic Welpenela Teas, Organic Black Tea, Premium Spice Blends, and Chilli Papper Sauce — strengthening Sri Lanka’s presence in the global organic market.",
   },
+
+  // {
+  //   date: "Jan '26",
+  //   title: "Winner – Pinnacle Award",
+  //   description:
+  //     "Golden Nature Plantation was honored with the prestigious Pinnacle Award in recognition of our excellence in quality, innovation, and sustainable agricultural leadership in Sri Lanka.",
+  // },
 ];
 
 // VALUES
@@ -205,10 +217,19 @@ const About = () => {
                   will uphold with unwavering dedication.
                 </p>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="mt-4 flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-emerald overflow-hidden flex items-center justify-center">
+                  <img
+                    src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1767874677/Untitled_design_6_kc3xch.png"
+                    alt="Chairman - Dhanushka Bandara"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* <div className="flex items-center gap-4">
                 <div className="w-16 h-16 rounded-full bg-emerald flex items-center justify-center">
                   <span className="font-display text-xl text-gold">DB</span>
-                </div>
+                </div> */}
                 <div>
                   <p className="font-display text-xl text-foreground">
                     Mr. Dhanushka Bandara
@@ -350,7 +371,7 @@ const About = () => {
             </ul>
             <a href="#" className="inline-block mr-3">
               <img
-                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765530204/Mobile_app_store_badge_3_vd2gg9.png"
+                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1767862488/icons8-ios-50_tjykt4.png"
                 alt="Download on the App Store"
                 className="h-12 sm:h-14 w-auto hover:opacity-90 transition"
               />
@@ -359,7 +380,7 @@ const About = () => {
             {/* Google Play button */}
             <a href="#" className="inline-block">
               <img
-                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765530189/Mobile_app_store_badge_2_bim3kr.png"
+                src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1767862473/icons8-google-play-50_ylsgyb.png"
                 alt="Get it on Google Play"
                 className="h-12 sm:h-14 w-auto hover:opacity-90 transition"
               />
@@ -374,7 +395,7 @@ const About = () => {
           <div className="flex justify-center">
             {/* <div className="bg-white rounded-3xl shadow-elevated p-6 max-w-sm w-full"> */}
             <img
-              src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765453091/PONE_1_j7qgof.png"
+              src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1767863614/Golden_Nature_Leaflet_1_nrec6p.png"
               alt="Golden Nature mobile application"
               className="rounded-2xl w-full  object-cover"
             />
@@ -439,33 +460,53 @@ const About = () => {
                     <span>Sri Lanka</span>
                   </div>
 
+                  {/* BR */}
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="font-semibold text-foreground min-w-[130px]">
-                      BR Number
+                      Business Registration Number
                     </span>
-                    <span>IT23436312</span>
+                    <span>PV00327146</span>
                     <a
-                      href="#"
+                      href="/pdf/BR-GN.pdf"
                       target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center justify-center rounded-full p-1.5 border border-emerald/30 text-emerald hover:text-emerald-dark hover:bg-emerald/5 transition-colors"
-                      aria-label="Download Business Registration"
+                      download
+                      className="inline-flex items-center justify-center rounded-full p-1.5
+               border border-emerald/30 text-emerald
+               hover:text-emerald-dark hover:bg-emerald/5 transition-colors"
                     >
                       <Download className="w-4 h-4" />
                     </a>
                   </div>
 
+                  {/* TIN */}
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="font-semibold text-foreground min-w-[130px]">
-                      TIN
+                     Taxpayer Identification Number(TIN)
                     </span>
-                    <span>IT23436312</span>
+                    <span>217684307</span>
                     <a
-                      href="#"
+                      href="/pdf/TIN-GN.pdf"
                       target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center justify-center rounded-full p-1.5 border border-emerald/30 text-emerald hover:text-emerald-dark hover:bg-emerald/5 transition-colors"
-                      aria-label="Download Tax Registration"
+                      download
+                      className="inline-flex items-center justify-center rounded-full p-1.5
+               border border-emerald/30 text-emerald
+               hover:text-emerald-dark hover:bg-emerald/5 transition-colors"
+                    >
+                      <Download className="w-4 h-4" />
+                    </a>
+                  </div>
+                   <div className="flex flex-wrap items-center gap-3">
+                    <span className="font-semibold text-foreground min-w-[130px]">
+                     Employer Registration Number (E.P.F)
+                    </span>
+                    <span>23868/D/</span>
+                    <a
+                      href="/pdf/EPF-GN.pdf"
+                      target="_blank"
+                      download
+                      className="inline-flex items-center justify-center rounded-full p-1.5
+               border border-emerald/30 text-emerald
+               hover:text-emerald-dark hover:bg-emerald/5 transition-colors"
                     >
                       <Download className="w-4 h-4" />
                     </a>
@@ -603,7 +644,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-10">
             {/* Kandy Branch */}
             <div className="bg-white rounded-2xl shadow-elevated p-8 border border-emerald/10">
-              <h3 className="font-display text-2xl mb-4">Kandy Head Office</h3>
+              <h3 className="font-display text-2xl mb-4">Kandy-Head Office</h3>
               <div className="flex items-start gap-3 mb-3">
                 <MapPin className="w-5 h-5 text-emerald mt-1" />
                 <p className="font-body text-sm text-muted-foreground">
@@ -624,7 +665,7 @@ const About = () => {
 
             {/* Colombo Branch */}
             <div className="bg-white rounded-2xl shadow-elevated p-8 border border-emerald/10">
-              <h3 className="font-display text-2xl mb-4">Colombo Branch</h3>
+              <h3 className="font-display text-2xl mb-4">Colombo-Regional Office</h3>
               <div className="flex items-start gap-3 mb-3">
                 <MapPin className="w-5 h-5 text-emerald mt-1" />
                 <p className="font-body text-sm text-muted-foreground">

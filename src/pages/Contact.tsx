@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -13,9 +14,10 @@ import {
   MessageSquare,
   Building,
   ShoppingBag,
+  ChevronDown,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { ChevronDown } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const branches = [
   {
@@ -32,27 +34,27 @@ const branches = [
       "Saturday: Closed",
       "Sunday: Closed",
     ],
+
+
     mapTitle: "Golden Nature Plantation - Kandy",
     mapSrc:
-      "https://www.google.com/maps?q=Katugastota+Road+Kandy+Sri+Lanka&output=embed",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63320.42984403517!2d80.62578144999999!3d7.2945453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa27b37568bebd535%3A0x3392077cd6ed7cfe!2sGolden%20Nature%20Plantation%20(Pvt)%20Ltd%20-%20Head%20Office!5e0!3m2!1sen!2slk!4v1767873610521!5m2!1sen!2slk",
   },
-  {
-    name: "Dehiwela- Regional Office",
+  {    name: "Colombo- Regional Office",
     address: [
       "Golden Nature Plantation (Pvt) Ltd",
       "No. 139,1/4, Galle Road,",
       "Dehiwela, Sri Lanka",
-      
     ],
-    phone: "+94 74 411 8829", 
-    email: "info@goldennatureplantation.com", 
+    phone: "+94 74 411 8829",
+    email: "info@goldennatureplantation.com",
     hours: [
       "Monday - Friday: 8:30 AM - 5:00 PM",
       "Saturday: Closed",
       "Sunday: Closed",
     ],
     mapTitle: "Golden Nature Plantation - Dehiwela",
-    mapSrc: "https://www.google.com/maps?q=Colombo+Sri+Lanka&output=embed",
+    mapSrc:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.277869441924!2d79.86345141100801!3d6.857261519165302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bba3f09e723%3A0x99c41b44f83f49b2!2sGolden%20Nature%20Plantation%20-%20Colombo!5e0!3m2!1sen!2slk!4v1767866473928!5m2!1sen!2slk",
   },
 ];
 
@@ -67,32 +69,78 @@ const inquiryTypes = [
   { icon: MessageSquare, label: "Investor Relations", value: "investor" },
 ];
 
+// EmailJS config – from .env
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID as string;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string;
+
 const Contact = () => {
   const { toast } = useToast();
+  const [isSending, setIsSending] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     inquiryType: "",
-    branch: "", 
+    branch: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description:
-        "Thank you for reaching out. We'll get back to you within 24 hours.",
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      inquiryType: "",
-      branch: "",
-      message: "",
-    });
+
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      console.error("EmailJS env vars missing");
+      toast({
+        title: "Configuration Error",
+        description:
+          "Email service is not configured correctly. Please try again later.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSending(true);
+
+    // These keys must match the variable names you used in EmailJS template
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      branch: formData.branch,
+      inquiry_type: formData.inquiryType || "Not specified",
+      message: formData.message,
+    };
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+
+      toast({
+        title: "Message Sent!",
+        description:
+          "Thank you for reaching out. We'll get back to you within 24 hours.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        inquiryType: "",
+        branch: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast({
+        title: "Something went wrong",
+        description:
+          "We couldn't send your message right now. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -150,7 +198,7 @@ const Contact = () => {
                     <div className="relative">
                       <select
                         className="border border-border rounded-lg w-full h-11 px-3 pr-10 text-sm bg-white 
-                 appearance-none focus:outline-none focus:ring-2 focus:ring-emerald"
+                        appearance-none focus:outline-none focus:ring-2 focus:ring-emerald"
                         value={formData.branch}
                         onChange={(e) =>
                           setFormData({ ...formData, branch: e.target.value })
@@ -283,8 +331,9 @@ const Contact = () => {
                     variant="emerald"
                     size="xl"
                     className="w-full"
+                    disabled={isSending}
                   >
-                    Send Message
+                    {isSending ? "Sending..." : "Send Message"}
                     <Send className="w-5 h-5 ml-2" />
                   </Button>
                 </form>
@@ -395,8 +444,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-     
 
       <Footer />
     </main>

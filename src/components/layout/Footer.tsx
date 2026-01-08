@@ -50,14 +50,14 @@ export function Footer() {
               {/* <div className="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center">
                 <Leaf className="w-7 h-7 text-gold" />
               </div> */}
-              <img
+              {/* <img
                 src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765520749/2_vghe1k.png"
                 alt="Golden Nature Logo"
                 className="w-14 h-14 object-contain group-hover:scale-110 transition-transform duration-300"
-              />
+              /> */}
               <div className="flex flex-col">
                 <span className="font-display text-2xl text-ivory">
-                  Golden Nature Plantation (Pvt) Ltd
+                Golden Nature Plantation (Pvt) Ltd
                 </span>
                 {/* <span className="text-xs font-body tracking-widest uppercase text-gold">
                   Plantation (Pvt) Ltd
@@ -153,7 +153,7 @@ export function Footer() {
               </div>
               <div>
                 <p className="font-body text-sm text-ivory/70">Phone</p>
-                <p className="font-body text-ivory">+94 817798 555</p>
+                <p className="font-body text-ivory">+94 81 779 8555</p>  
               </div>
             </div>
             <div className="flex items-center gap-4">

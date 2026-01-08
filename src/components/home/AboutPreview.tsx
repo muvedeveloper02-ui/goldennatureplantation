@@ -48,12 +48,21 @@ export function AboutPreview() {
             {/* Floating Card */}
             <div className="absolute -bottom-8 -right-8 bg-ivory rounded-xl p-6 shadow-elevated max-w-xs">
               <p className="font-elegant text-lg text-emerald italic leading-relaxed">
-                “At Golden Nature Plantation, we don’t simply grow crops — we cultivate trust, sustainability, and prosperity for generations to come.”
+                “At Golden Nature Plantation, we don’t simply grow crops — we
+                cultivate trust, sustainability, and prosperity for generations
+                to come.”
               </p>
+
               <div className="mt-4 flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center">
-                  <span className="font-display text-gold text-lg">DB</span>
+             
+                <div className="w-12 h-12 rounded-full bg-emerald overflow-hidden flex items-center justify-center">
+                  <img
+                    src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1767874677/Untitled_design_6_kc3xch.png"
+                    alt="Chairman - Dhanushka Bandara"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+
                 <div>
                   <p className="font-body font-semibold text-foreground">
                     Dhanushka Bandara
@@ -103,7 +112,7 @@ export function AboutPreview() {
               for our customers while nurturing the land for generations to
               come.
             </p>
- 
+
             {/* Values Grid */}
             <div className="grid grid-cols-2 gap-6 mb-10">
               {values.map((value) => (

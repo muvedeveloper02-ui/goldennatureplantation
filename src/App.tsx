@@ -20,6 +20,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsConditions from "@/pages/TermsConditions";
 
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
