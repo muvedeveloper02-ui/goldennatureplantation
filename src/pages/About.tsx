@@ -173,7 +173,7 @@ const About = () => {
 
               <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-green">
                 <img
-                  src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765521285/1_dic2dk.png"
+                  src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1767957047/Golden_logo_ooxkrz.png"
                   alt="Golden Nature Logo"
                   className="w-20 h-20 object-contain"
                 />

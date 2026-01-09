@@ -103,7 +103,6 @@ const Contact = () => {
 
     setIsSending(true);
 
-    // These keys must match the variable names you used in EmailJS template
     const templateParams = {
       from_name: formData.name,
       from_email: formData.email,

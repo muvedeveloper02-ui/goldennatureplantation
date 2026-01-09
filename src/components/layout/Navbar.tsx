@@ -41,23 +41,25 @@ export function Navbar() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo from Public Folder */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-0.5 group">
             {/* <div className="w-12 h-12 rounded-full bg-emerald flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Leaf className="w-6 h-6 text-gold" />
             </div> */}
-            <img
-              src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1765518698/3_ri7wuo.png"
+               <img
+              src="https://res.cloudinary.com/dhxnoqtmf/image/upload/v1767957047/Golden_logo_ooxkrz.png"
               alt="Golden Nature Logo"
               className="w-20 h-20 object-contain group-hover:scale-110 transition-transform duration-300"
             />
+           
             <div className="flex flex-col">
+            
               <span
                 className={cn(
                   "font-display text-xl tracking-wide transition-colors",
                   isScrolled ? "text-emerald" : "text-ivory"
                 )}
               >
-                GOLDEN NATURE PLANTATION
+                GOLDEN NATURE PLANTATION (PVT) LTD.
               </span>
               {/* <span className={cn(
                 "text-xs font-body tracking-widest uppercase transition-colors",
