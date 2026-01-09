@@ -93,7 +93,7 @@ export function HeroSection() {
             </div>
             <div className="text-center">
               <p className="font-display text-3xl md:text-4xl text-white mb-1">
-                50+
+                500+
               </p>
               <p className="font-body text-sm text-ivory/70">Happy Clients </p>
             </div>

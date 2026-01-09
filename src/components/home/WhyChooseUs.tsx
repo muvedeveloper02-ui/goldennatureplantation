@@ -94,7 +94,7 @@ export function WhyChooseUs() {
           {[
             { value: "10,000+", label: "Hectares of Plantation" },
             { value: "5,000+", label: "Farming Families" },
-            { value: "50+", label: "Export Countries" },
+            { value: "50+", label: "Organic Products" },
             { value: "100%", label: "Customer Satisfaction" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
